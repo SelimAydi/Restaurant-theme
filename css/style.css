@@ -23,12 +23,6 @@ body,html {
     color: #f8f9fa;
 }
 
-.overlay {
-	filter: blur(2px);
-	-webkit-filter: blur(2px);
-  /* Full height */
-	height: 100%;
-}
 
 .socialmedia {
 	z-index: 22;
