@@ -39,3 +39,10 @@ body,html {
 .fab:hover{
 	color:lightblue;
 }
+
+@media(max-width:767px){
+	#logo{
+		height:40.6px;
+		width: 60.6px;
+	}
+}
