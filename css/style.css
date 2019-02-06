@@ -1,13 +1,14 @@
 
 body,html {
 	height:100vh;
-	overflow: hidden;
-	
+	background-color:#333131;
 }
 
 .carousel-inner img {
 	width: 100vw;
 	height: 100vh;
+	object-fit: cover;
+	overflow: hidden;
 }
 
 .navbar {
@@ -23,12 +24,11 @@ body,html {
     color: #f8f9fa;
 }
 
-
 .socialmedia {
 	z-index: 22;
 	position: absolute;
-	top: 90%;
-	left:5%;
+	bottom: 8%;
+	padding-left:40px;
 }
 
 .fab{
@@ -42,7 +42,7 @@ body,html {
 
 @media(max-width:767px){
 	#logo{
-		height:40.6px;
-		width: 60.6px;
+		height:60.6px;
+		width: 80.6px;
 	}
 }
