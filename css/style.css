@@ -36,11 +36,13 @@ h3 {
 	background-attachment: fixed;
   	background-position: center;
   	background-repeat: no-repeat;
+
 }
 
 .carousel-inner img {
 	width: 100vw;
 	height: 100vh;
+	object-fit: cover;
 	overflow: hidden;
 }
 
@@ -90,12 +92,11 @@ main {
     color: #f8f9fa;
 }
 
-
 .socialmedia {
 	z-index: 22;
 	position: absolute;
-	top: 90%;
-	left:5%;
+	bottom: 8%;
+	padding-left:40px;
 }
 
 .fab{
@@ -137,7 +138,7 @@ main {
 
 @media(max-width:767px){
 	#logo{
-		height:40.6px;
-		width: 60.6px;
+		height:60.6px;
+		width: 80.6px;
 	}
 }
