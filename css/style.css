@@ -1,6 +1,7 @@
 body, html{
 	font-family: 'Montserrat';
 	height:100vh;
+	background-color: #1f1b1b;
 }
 
 p {
@@ -146,9 +147,14 @@ main {
 	padding: 70px;
 }
 
+#logo {
+	height:63px;
+	width:120px;
+}
+
 @media(max-width:767px){
 	#logo{
-		height:60.6px;
+		height:45.6px;
 		width: 80.6px;
 	}
 }
