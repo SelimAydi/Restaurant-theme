@@ -1,3 +1,7 @@
+html {
+	overflow-x: hidden;
+}
+
 body, html{
 	font-family: 'Montserrat';
 	height:100vh;
@@ -10,6 +14,7 @@ p {
 	z-index: 20;
 	font-weight: 100;
 	line-height: 1.7;
+	color: white;
 }
 
 h1, h2, h3 {
@@ -81,9 +86,10 @@ main {
 }
 
 .food-menu h3 {
-	border-top: solid 1px #ececec;
+	border-top: solid 1px #383737;
 	letter-spacing: 3px;
 	font-size: 14px;
+	color: wheat;
 
 }
 
@@ -125,6 +131,7 @@ main {
 .info-image {
 	background-image: url('../img/after-business-hours-architecture-bar-34650.jpg');
 	background-size: cover;
+	background-position: center center;
 }
 
 .info-outer {
@@ -135,11 +142,14 @@ main {
 
 .info-inner h2 {
 	color: wheat;
-	background: -webkit-linear-gradient(transparent, transparent),               -webkit-linear-gradient(top, rgb(230, 184, 110) 0%, rgb(199, 168, 118) 26%, rgba(226,186,120,1) 35%, rgb(212, 163, 86) 45%, rgb(175, 136, 72) 61%, rgba(213,173,109,1) 100%);
+	font-weight: 600;
+}
+
+.gold h2, .gold-text {
+	background: -webkit-linear-gradient(transparent, transparent), -webkit-linear-gradient(top, rgb(230, 184, 110) 0%, rgb(199, 168, 118) 26%, rgba(226,186,120,1) 35%, rgb(212, 163, 86) 45%, rgb(175, 136, 72) 61%, rgba(213,173,109,1) 100%);
 	background: -o-linear-gradient(transparent, transparent);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-weight: 600;
 }
 
 .info-inner {
@@ -147,16 +157,18 @@ main {
 	padding: 70px;
 }
 
+.fade-content, .regular-fade {
+	opacity: 0;
+	-webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
+}
+
 #logo {
 	height:63px;
 	width:120px;
-}
-
-@media(max-width:767px){
-	#logo{
-		height:45.6px;
-		width: 80.6px;
-	}
 }
 
 .jumbotron-position{
@@ -174,10 +186,19 @@ main {
 	z-index: 10;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	color: $carousel-caption-color;
 	text-align: left;
 }
 
 label {
 	color:black;
+}
+
+@media(max-width:767px){
+	#logo{
+		height:45.6px;
+		width: 80.6px;
+	}
+	.info-image {
+		height: 50%;
+	}
 }
