@@ -49,6 +49,7 @@ h3 {
 .navbar {
 	position: absolute;
 	width: 100%;
+	z-index: 2;
 }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
@@ -58,6 +59,10 @@ h3 {
 .navbar-light .navbar-nav .nav-link {
 	color: rgba(251, 251, 251, 0.5);
 
+}
+
+.navbar a {
+	font-size: 14px;
 }
 
 main {
@@ -129,6 +134,11 @@ main {
 
 .info-inner h2 {
 	color: wheat;
+	background: -webkit-linear-gradient(transparent, transparent),               -webkit-linear-gradient(top, rgb(230, 184, 110) 0%, rgb(199, 168, 118) 26%, rgba(226,186,120,1) 35%, rgb(212, 163, 86) 45%, rgb(175, 136, 72) 61%, rgba(213,173,109,1) 100%);
+	background: -o-linear-gradient(transparent, transparent);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 600;
 }
 
 .info-inner {
