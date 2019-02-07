@@ -46,6 +46,12 @@ h3 {
 }
 
 .carousel-inner img {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	overflow: hidden;
+}
+#carousel-inner img {
 	width: 50vw;
 	height: 100vh;
 	object-fit: cover;
