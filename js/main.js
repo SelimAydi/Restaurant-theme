@@ -1,6 +1,4 @@
 
-$('body').css('display', 'none');
-$('body').fadeIn(2100);
 $(document).ready(function () {
 
     $('.regular-fade').each(function () {
