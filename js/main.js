@@ -1,5 +1,23 @@
 
+var istoggled = false;
+function toggleNav() {
+    var mobileMenu = $('.mobilenav');
+    if (!istoggled) {
+        console.log("togglin");
+        mobileMenu.fadeTo(300, 1);
+    } else {
+        console.log("removing");
+        mobileMenu.fadeTo(300, 0);
+    }
+    istoggled = !istoggled;
+
+}
+
 $(document).ready(function () {
+
+    $('#nav-icon3').click(function () {
+        $(this).toggleClass('open');
+    });
 
     $('.regular-fade').each(function () {
         $(this).fadeTo(150, 1);
