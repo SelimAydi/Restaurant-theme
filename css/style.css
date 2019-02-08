@@ -5,7 +5,8 @@ html {
 body, html{
 	font-family: 'Montserrat';
 	height:100vh;
-	background-color: #1f1b1b;
+	/* background-color: #fffcfc; */
+	background-color:black;
 }
 
 p {
@@ -36,13 +37,13 @@ h3 {
 }
 
 .food-header {
-	background-image: url('../img/burrito.jpg');
-	height: 40%;
+	background-image: url('https://images.pexels.com/photos/842545/pexels-photo-842545.jpeg');
+	height: 60%;
 	background-size: cover;
 	background-attachment: fixed;
-  	background-position: center;
-  	background-repeat: no-repeat;
-
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-position-y: -260px;
 }
 
 .carousel-inner img {
@@ -91,11 +92,16 @@ main {
 	padding-top: 20px;
 }
 
+.food-menu p {
+	color: #0c0b0b;
+	font-size: 12px;
+}
+
 .food-menu h3 {
-	border-top: solid 1px #383737;
+	border-top: solid 1px #e2e2e2;
 	letter-spacing: 3px;
 	font-size: 14px;
-	color: wheat;
+	color: #82755d;
 
 }
 
@@ -138,6 +144,7 @@ main {
 	background-image: url('../img/after-business-hours-architecture-bar-34650.jpg');
 	background-size: cover;
 	background-position: center center;
+	height:100vh;
 }
 
 .info-outer {
@@ -199,12 +206,26 @@ label {
 	color:black;
 }
 
+.modal-header .close {
+    padding: 1rem 1rem;
+    margin: -1.5rem -9.5rem -5rem auto;
+}
+
 @media(max-width:767px){
 	#logo{
 		height:45.6px;
 		width: 80.6px;
 	}
-	.info-image {
-		height: 50%;
+	.info-image, .info-carousel {
+		height: 50vh;
+	}
+	.info-carousel {
+		overflow: hidden;
+	}
+	.socialmedia-info {
+		display: none;
+	}
+	.info-inner {
+		height:50vh;
 	}
 }

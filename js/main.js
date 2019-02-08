@@ -1,7 +1,10 @@
 
+$('body').css('display', 'none');
+$('body').fadeIn(2100);
 $(document).ready(function () {
+
     $('.regular-fade').each(function () {
-        $(this).fadeTo(100, 1);
+        $(this).fadeTo(150, 1);
     });
 
     $('#myModal').on('shown.bs.modal', function () {
@@ -17,14 +20,20 @@ $(document).ready(function () {
     $(window).scroll(function () {
         $('.fade-content').each(function () {
             if (!outOfBounds($(this))) {
-                $(this).stop().fadeTo(100, 1);
+                $(this).stop().fadeTo(350, 1);
             }
 
         });
     });
 
     function outOfBounds($element) {
-        return $element.offset().top < $(window).scrollTop() || $element.offset().top + $element.height() > $(window).scrollTop() + $(window).height();
+        return $element.offset().top - 50  < $(window).scrollTop() || ($element.offset().top + $element.height())-50 > $(window).scrollTop() + $(window).height();
     }
+
+    // $('.transitionEffect').hide().one("load",function(){
+    //     $(this).fadeIn(500);
+    // }).each(function(){
+    //     if(this.complete) $(this).trigger("load");
+    // });
 
 });
