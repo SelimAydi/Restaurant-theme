@@ -51,5 +51,7 @@ $(document).ready(function () {
     // }).each(function(){
     //     if(this.complete) $(this).trigger("load");
     // });
-
+    $(document).ready(function () {
+        $('div.hidden').fadeIn(1200).removeClass('hidden');
+    });
 });
