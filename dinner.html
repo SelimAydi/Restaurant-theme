@@ -13,36 +13,59 @@
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-expand-md">
-                <a class="navbar-brand" href="index.html"><img class="pt-3 pl-4" id="logo" src="img/LogoGO.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link mt-3" href="reservation.html">Reservation</a>
-                    </li>
-                    <li class="nav-item px-2 mt-3">
-                      <a class="nav-link" href="lunch.html">Lunch</a>
-                    </li>
-                    <li class="nav-item active px-2 mt-3">
-                      <a class="nav-link " href="dinner.html">Dinner<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item px-2 mt-3">
-                      <a class="nav-link " href="about.html">About</a>
-                    </li>
-                    <li class="nav-item px-2 mt-3">
-                      <a class="nav-link " href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item px-3 pr-4 mt-3">
-                      <a class="nav-link" href="#">NL</a>
-                    </li>
-                  </ul>
-                </div>
-            </nav>
-
-
+<div class="mobilenav navbar flex">
+    <ul>
+        <li>
+            <a class="nav-link" href="reservation.html">Reservation</a>
+        </li>
+        <li>
+            <a class="nav-link" href="lunch.html">Lunch</a>
+        </li>
+        <li>
+            <a class="nav-link" href="dinner.html">Dinner</a>
+        </li>
+        <li>
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li>
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#">NL</a>
+        </li>
+    </ul>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-expand-md">
+    <a class="navbar-brand" href="index.html"><img class="pt-3 pl-4" id="logo" src="img/LogoGO.png"></a>
+    <div id="nav-icon3" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link px-2 pt-2 mt-3" href="reservation.html">Reservation</a>
+            </li>
+            <li class="nav-item px-2 mt-3">
+                <a class="nav-link" href="lunch.html">Lunch</a>
+            </li>
+            <li class="nav-item px-2 mt-3">
+                <a class="nav-link " href="dinner.html">Dinner</a>
+            </li>
+            <li class="nav-item px-2 mt-3">
+                <a class="nav-link " href="about.html">About</a>
+            </li>
+            <li class="nav-item px-2 mt-3">
+                <a class="nav-link " href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item px-3 pr-4 mt-3">
+                <a class="nav-link" href="#">NL</a>
+            </li>
+        </ul>
+    </div>
+</nav>
     <main class="main">
         <div class=" hidden food-header">
             
