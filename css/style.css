@@ -5,8 +5,7 @@ html {
 body, html{
 	font-family: 'Montserrat';
 	height:100vh;
-	/* background-color: #fffcfc; */
-	background-color:#1f1b1b;
+	background-color: #1f1b1b;
 }
 
 p {
@@ -38,12 +37,21 @@ h3 {
 
 .food-header {
 	background-image: url('https://images.pexels.com/photos/842545/pexels-photo-842545.jpeg');
-	height: 60%;
+	height: 100%;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-position-y: -260px;
+	transition-timing-function: cubic-bezier(0,1.39,.83,.67);
+
+}
+
+.food-header-wrapper{
+	height:60%;
+	width:100%;
+	background-color:#1f1b1b;
+
 }
 
 .carousel-inner img {
@@ -148,7 +156,7 @@ main {
 	background-image: url('../img/after-business-hours-architecture-bar-34650.jpg');
 	background-size: cover;
 	background-position: center center;
-	height:100vh;
+	height:100%;
 }
 
 .info-outer {
@@ -337,8 +345,9 @@ label {
   width: 0%;
   left: 50%;
 }
-div.hidden {
-    display: none
+
+.hidden {
+	display: none;
 }
 
 @media(max-width:767px){
@@ -358,6 +367,9 @@ div.hidden {
 	.info-inner {
 		height:50vh;
 	}
+}
+
+@media(max-width: 991px){
 	#nav-icon3 {
 		opacity: 1;
 		height: 29px;

@@ -44,12 +44,13 @@ $(document).ready(function () {
         return $element.offset().top - 50  < $(window).scrollTop() || ($element.offset().top + $element.height())-50 > $(window).scrollTop() + $(window).height();
     }
 
-    // $('.transitionEffect').hide().one("load",function(){
-    //     $(this).fadeIn(500);
-    // }).each(function(){
-    //     if(this.complete) $(this).trigger("load");
-    // });
-    $(document).ready(function () {
-        $('div.hidden').fadeIn(1200).removeClass('hidden');
-    });
+
+    setTimeout(
+        function()
+        {
+            $(document).ready(function () {
+                $('div.hidden').fadeIn(1200).removeClass('hidden');
+            });
+
+        },50);
 });
