@@ -3,11 +3,9 @@ var istoggled = false;
 function toggleNav() {
     var mobileMenu = $('.mobilenav');
     if (!istoggled) {
-        console.log("togglin");
-        mobileMenu.fadeTo(300, 1);
+        mobileMenu.addClass('mobilenav--toggled');
     } else {
-        console.log("removing");
-        mobileMenu.fadeTo(300, 0);
+        mobileMenu.removeClass('mobilenav--toggled');
     }
     istoggled = !istoggled;
 
