@@ -314,6 +314,9 @@ label {
   width: 0%;
   left: 50%;
 }
+div.hidden {
+    display: none
+}
 
 @media(max-width:767px){
 	#logo{
