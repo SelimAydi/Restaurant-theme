@@ -429,6 +429,31 @@ label {
 	display: none;
 }
 
+@media(max-width:768px){
+	.display-4{
+		font-size: 1.9rem;
+	}
+	.Lead{
+		font-weight: 500;
+	}
+}
+@media (max-width:1024px){
+	.display-4{
+		font-size: 2.5rem;
+	}
+}
+@media(max-width:425px){
+	.lead {
+		line-height: 1.1;
+	}
+	.display-4 {
+		font-size: 1.4rem;
+		font-weight: 500;
+		line-height: 1.0;
+		font-weight: 400;
+	}
+}
+
 @media(max-width:767px){
 	#logo{
 		height:45.6px;
