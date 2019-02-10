@@ -72,6 +72,11 @@ h3 {
 
 }
 
+.carousel-inner, .carousel-item.active, .carousel {
+	width: 100%;
+	height: 100%;
+}
+
 .carousel-inner img {
 	width: 100vw;
 	height: 100vh;
@@ -84,6 +89,16 @@ h3 {
 	object-fit: cover;
 	overflow: hidden;
 }
+/* 
+.carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out .1s;
+}
+
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+} */
 
 .navbar {
 	position: absolute;
@@ -468,7 +483,10 @@ label {
 		height:45.6px;
 		width: 80.6px;
 	}
-	.info-image, .info-carousel {
+	.info-image, .info-carousel, .info-outer {
+		min-height: 50vh;
+	}
+	.carousel-inner--about img{
 		height: 50vh;
 	}
 	.info-carousel {
