@@ -35,6 +35,25 @@ h3 {
 	font-size: 19px;
 }
 
+#demologo {
+	fill: white;
+	height: 50px;
+	width: 50px;
+}
+
+.fixed {
+	position: fixed !important;
+}
+
+.fixed--logo {
+	top: 8px;
+}
+
+.fixed--button {
+	top: 24px;
+	right: 17px;
+}
+
 .food-header {
 	background-image: url('https://images.pexels.com/photos/842545/pexels-photo-842545.jpeg');
 	height: 100%;
@@ -279,13 +298,14 @@ label {
 	margin: -1.5rem -9.5rem -5rem auto;
 }
 .mobilenav {
+	overflow: hidden;
 	top: 100%;
 	-webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
 	transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
 	width: 100vw;
 	height: 100vh;
 	opacity: 0;
-	position: relative;
+	position: fixed;
 	background-color: #1f1b1b;
 	z-index: 110;
 	justify-content: center;
@@ -294,7 +314,7 @@ label {
 
 .mobilenav-wrapper {
 	position: absolute;
-	height: 100%;
+	height: 100vh;
 	overflow: hidden;
 }
 
