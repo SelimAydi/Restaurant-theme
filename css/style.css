@@ -227,14 +227,13 @@ display: inline-block;
 }
 
 .info-image {
-	background-image: url('../img/after-business-hours-architecture-bar-34650.jpg');
 	background-size: cover;
 	background-position: center center;
 	height:100%;
 }
 
 .info-outer {
-	background: linear-gradient(to top,#191c1e, #0f1113,#191c1e);
+	background: linear-gradient(to bottom,#191c1e, #0f1113);
 	display: flex;
 	align-items: center;
 }
