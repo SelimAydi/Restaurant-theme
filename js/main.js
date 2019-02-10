@@ -2,10 +2,16 @@
 var istoggled = false;
 function toggleNav() {
     var mobileMenu = $('.mobilenav');
+    var logo = $('#logo');
+    var button = $('#nav-icon3');
     if (!istoggled) {
         mobileMenu.addClass('mobilenav--toggled');
+        logo.addClass('fixed fixed--logo');
+        button.addClass('fixed fixed--button');
     } else {
         mobileMenu.removeClass('mobilenav--toggled');
+        logo.removeClass('fixed fixed--logo');
+        button.removeClass('fixed fixed--button');
     }
     istoggled = !istoggled;
 
