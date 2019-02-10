@@ -237,6 +237,7 @@ display: inline-block;
 	background: linear-gradient(to top,#191c1e, #0f1113,#191c1e);
 	display: flex;
 	align-items: center;
+	height: 100%;
 }
 
 .info-inner h2 {
@@ -254,6 +255,12 @@ display: inline-block;
 .info-inner {
 	color: white;
 	padding: 70px;
+}
+
+.info-inner-first-page-about {
+	color: white;
+	padding: 70px;
+	padding-top: 50%;
 }
 
 .fade-content, .regular-fade {
