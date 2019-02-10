@@ -202,7 +202,7 @@ display: inline-block;
 	z-index: 22;
 	position: absolute;
 	bottom: 8%;
-	padding-left:40px;
+	padding-left:30px;
 }
 
 .fab{
@@ -445,6 +445,7 @@ label {
 @media(max-width:425px){
 	.lead {
 		line-height: 1.1;
+		font-size: 0.8rem !important;
 	}
 	.display-4 {
 		font-size: 1.4rem;
