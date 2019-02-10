@@ -202,7 +202,7 @@ display: inline-block;
 	z-index: 22;
 	position: absolute;
 	bottom: 8%;
-	padding-left:40px;
+	padding-left:30px;
 }
 
 .fab{
@@ -426,6 +426,32 @@ label {
 
 .mobile-menu {
 	display: none;
+}
+
+@media(max-width:768px){
+	.display-4{
+		font-size: 1.5rem;
+	}
+	.Lead{
+		font-weight: 500;
+	}
+}
+@media (max-width:1024px){
+	.display-4{
+		font-size: 2.5rem;
+	}
+}
+@media(max-width:425px){
+	.lead {
+		line-height: 1.1;
+		font-size: 0.8rem !important;
+	}
+	.display-4 {
+		font-size: 1.4rem;
+		font-weight: 500;
+		line-height: 1.0;
+		font-weight: 400;
+	}
 }
 
 @media(max-width:767px){
