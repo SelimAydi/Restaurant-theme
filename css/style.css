@@ -304,7 +304,7 @@ label {
 	height: 100vh;
 	opacity: 0;
 	position: fixed;
-	background-color: #1f1b1b;
+	background: linear-gradient(to top,#191c1e, #0f1113,#191c1e);
 	z-index: 110;
 	justify-content: center;
 	text-align: left;
@@ -314,6 +314,7 @@ label {
 	position: absolute;
 	height: 100vh;
 	overflow: hidden;
+	background: linear-gradient(to top,#191c1e, #0f1113,#191c1e);
 }
 
 .mobilenav--toggled {
@@ -438,6 +439,11 @@ label {
 	}
 	.Lead{
 		font-weight: 500;
+	}
+	.info-inner-first-page-about {
+		color: white;
+		padding: 70px;
+		padding-top: 70px;
 	}
 }
 @media (max-width:1024px){
