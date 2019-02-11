@@ -225,10 +225,6 @@ display: inline-block;
 	color:white;
 }
 
-.fab:hover{
-	color:lightblue;
-}
-
 .full-height {
 	height: 100%;
 }
@@ -529,7 +525,11 @@ label {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+.hvr-float:hover > i, .hvr-float:focus > i, .hvr-float:active > i {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
+}
+
+i.fab {
+	transition: 0.2s;
 }
